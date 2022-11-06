@@ -126,15 +126,19 @@ header {
 /*******************4TH SECTION******************************/
 .experience {
     background-color: #97CBDC;
-    padding: 5% 10% 5% 8%;
+    padding: 2% 7% 2% 4%;
 }
 .Ex-image {
-    width: 350px;
-    height: 410px;
+    width: 400px;
+    height: 450px;
+    margin-top: 60px;
 }
 .exp {
     color: #004581;
     font-weight: bold;
+}
+.line {
+    width: 16px;
 }
 
 .date-color {
@@ -146,11 +150,23 @@ header {
     background-color: #DDE8F0;
     border: none;
     border-radius: 7px;
+    height: 185px;
+    min-height: 185px;
+    width: 350px;
+    min-width: 300px;
 }
 .column:hover {
     background-color: #004581;
     color: #DDE8F0;
 }
+.btn-e {
+  background-color: #004581;
+  border: none;
+  border-radius: 6px;
+  color: #DDE8F0;
+  padding: 8px 17px;
+}
+
 
 
 
@@ -175,7 +191,18 @@ header {
 .apostrophee-img {
     height:45px;
 }
-
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #97CBDC;
+}
 
 
 

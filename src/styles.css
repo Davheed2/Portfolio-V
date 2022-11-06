@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #DDE8F0;
+    color: #40514E;
+    font-family: "merriweather";
+}
+h1 {
+    font-family: "poppins";
+    font-weight: bold;
+    line-height: 1.5;
+}
+h2 {
+    font-family: "poppins";
+    font-weight: bold;
+}
+h3 {
+    font-family: "poppins";
+    font-weight: normal;
+}
+p {
+    font-family: "merriweather";
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+textarea {
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 4px;
+    resize: none;
+}
+
+/*******************1ST AND 2ND SECTION***********************/
+nav {
+    padding: 3% 13% 0;
+}
+    
+header {
+    background-color: #004581;
+    color: #DDE8F0;
+}
+.landing {
+    background-color: #004581;
+    color: #DDE8F0;
+    padding: 3% 13% 0;
+
+}
+.nav-link {
+    margin-left: 3rem;
+    font-family: "poppins";
+    font-weight: lighter;
+    text-align: center;
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #97CBDC;
+    font-size: 1.26rem;
+}
+.nav-edit {
+    margin-top: 7px;
+}
+.last-navlink {
+    border: solid #DDE8F0 1px;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 0;
+}
+.last-navlink:hover{
+  color: #97CBDC;
+}
+.nav-brand{
+    font-family: "Ubuntu";
+    font-weight: normal;
+}
+.profile-img {
+    width: 350px;
+    min-width: 350px;
+    height: 500px;
+    align-items: center;
+}
+
+
+
+
+
+/********************3RD SECTION*************************/
+.Skills {
+    background-color: #DDE8F0;
+    padding: 5% 13% 5%;
+}
+.ski {
+    color: #018ABD;
+    font-weight: bold;
+}
+.skill-img {
+    width: 325px;
+    height: 385px;
+    margin: 0 auto;
+}
+.about-color {
+    color: #01202c;
+}
+.div-icon {
+    width: 20%;
+}
+.icons {
+    color: #97CBDC;
+}
+.icons:hover {
+    color: #018ABD;
+}
+.about {
+    line-height: 1.5;
+}
+
+
+
+
+
+/*******************4TH SECTION******************************/
+.experience {
+    background-color: #97CBDC;
+    padding: 5% 10% 5% 8%;
+}
+.Ex-image {
+    width: 350px;
+    height: 410px;
+}
+.exp {
+    color: #004581;
+    font-weight: bold;
+}
+
+.date-color {
+    color: #01202c;
+    font-weight: bold;
+}
+
+.column {
+    background-color: #DDE8F0;
+    border: none;
+    border-radius: 7px;
+}
+.column:hover {
+    background-color: #004581;
+    color: #DDE8F0;
+}
+
+
+
+
+
+
+
+
+/*******************5TH SECTION****************************/
+.Projects {
+    background-color: #DDE8F0;
+}
+
+
+
+
+
+
+
+
+/*********************6TH SECTION*******************************/
+.apostrophee-img {
+    height:45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************7TH SECTION******************************/
+.cont {
+    color: #018ABD;
+    font-weight: bold;
+}
+.contact-route {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.contact-icon {
+    background-color: #004581;
+    color: #DDE8F0;
+    padding: 80%;
+    border-radius: 100%;
+}
+.btn {
+  background-color: #004581;
+  border: none;
+  border-radius: 6px;
+  color: #DDE8F0;
+  padding: 8px 38px;
+  text-align: center;
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+/*******************LAST SECTION***********************************/
+footer {
+    background-color: #004581;
+    color: #DDE8F0;
+    align-items: center;
+    padding: 50px 0 20px;
+    margin-bottom: 0;
+}
+.copyright {
+    line-height: 1.5;
+}
+.footer-text {
+    font-weight: normal;
+}
+
+
+
+
+
+
+/*****************************************RESPONSIVE DESIGN*********************************************/
+@media only screen and (max-width: 600px) {
+    .profile {
+       display: none;
+    }
+  }
+
+  /*@media only screen and (max-width: 768px) {
+    .profile {
+       display: none;
+    }
+  }  */

@@ -695,6 +695,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -709,9 +713,14 @@ video {
   padding-right: 2.5rem;
 }
 
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .py-20 {
@@ -735,10 +744,6 @@ video {
 
 .pb-20 {
   padding-bottom: 5rem;
-}
-
-.pt-11 {
-  padding-top: 2.75rem;
 }
 
 .pb-7 {
@@ -765,8 +770,16 @@ video {
   padding-top: 8rem;
 }
 
+.pb-9 {
+  padding-bottom: 2.25rem;
+}
+
 .pb-4 {
   padding-bottom: 1rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
 }
 
 .pb-10 {
@@ -935,7 +948,7 @@ header {
 
 .Skills {
   background-color: #DDE8F0;
-  padding: 5% 13% 5%;
+  padding: 8% 13% 8%;
 }
 
 .ski {
@@ -949,6 +962,10 @@ header {
   margin: 0 auto;
 }
 
+.skill-img::before{
+  content: url(/public/images/wavy-lines.png);
+}
+
 .about-color {
   color: #01202c;
 }
@@ -958,12 +975,12 @@ header {
 }
 
 .icons {
-  color: #97CBDC;
-}
-
-.icons:hover {
   color: #018ABD;
 }
+
+/*.icons:hover {
+    color: #018ABD;
+}*/
 
 .about {
   line-height: 1.5;
@@ -1034,95 +1051,18 @@ header {
 
 /*******************5TH SECTION****************************/
 
-.Projects {
-  background-color: #DDE8F0;
-  padding: 0;
-  margin: 0;
-  width: 80%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.project-img {
+  width: 260px;
+  height: 200px;
 }
 
-.slide-container {
-  width: 100%;
-  height: 85vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
+.project-text {
+  width: 277px;
 }
 
-.image-slider {
-  width: 100%;
-  height: 600px;
-  position: absolute;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: .7s;
-}
-
-.slides-div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 30px 0 30px;
-}
-
-.img-ca {
-  position: relative;
-  width: 240px;
-  height: 370px;
-  transition: .5s;
-  filter: saturate(10%);
-}
-
-.button-ca {
-  position: absolute;
-  width: 240px;
-  height: 370px;
-  transition: .5s;
-  background-color: rgba(0, 0, 0, .4);
-}
-
-.button-ca:hover {
-  background-color: rgba(0, 0, 0, .2);
-}
-
-#slider-span1:target ~ .image-slider #img1,
-#slider-span1:target ~ .image-slider #button-1 {
-  width: 380px;
-  height: 585px;
-  background-color: transparent;
-  filter: saturate(100%);
-}
-
-#slider-span2:target ~ .image-slider #img2,
-#slider-span2:target ~ .image-slider #button-2 {
-  width: 380px;
-  height: 585px;
-  background-color: transparent;
-  filter: saturate(100%);
-}
-
-#slider-span3:target ~ .image-slider #img3,
-#slider-span3:target ~ .image-slider #button-3 {
-  width: 380px;
-  height: 585px;
-  background-color: transparent;
-  filter: saturate(100%);
-}
-
-/*************image position***************/
-
-#slider-span1:target ~ .image-slider {
-  left: 20%;
-}
-
-#slider-span3:target ~ .image-slider {
-  left: -20%;
+.project-title {
+  font-weight: bold;
+  color: #01202c;
 }
 
 /*********************6TH SECTION*******************************/

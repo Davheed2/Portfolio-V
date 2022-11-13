@@ -18,11 +18,11 @@
 
 
 <body>
-   <header class="">
+   <header>
     <nav class="flex items-center justify-between py-10 mb-0">
         <h2 class="nav-brand text-5xl">Vheektor.</h2>
 
-        <ul class="flex pr-14">
+        <ul class="flex nav-items pr-14">
             <li class="text-xl nav-edit nav-link">
                 <a href="#Home"><span>Home</span></a>
             </li>
@@ -45,10 +45,10 @@
 
    <main>
     <section id="Home" class="landing flex justify-between items-center pb-20 px-10 ">
-        <div class="flex-1 text-left mb-36">
-            <h3 class="text-2xl mb-5">Hello! I'm</h3> 
-            <h1 class="text-7xl mb-5">Okonkwo <br> Ifeosoluchukwu <br> Victor</h1>
-            <h3 class="text-lg">A Data Scientist</h3>
+        <div class="flex-1 text-left mb-36 intro">
+            <h3 class="text-2xl mb-5 greeting">Hello! I'm</h3> 
+            <h1 class="text-7xl mb-5 name">Okonkwo <br> Ifeosoluchukwu <br> Victor</h1>
+            <h3 class="text-lg profession">A Data Scientist</h3>
         </div>
         <aside class="profile">
             <img class="profile-img" src="images/cv image 2.png" alt="victors-pic">
@@ -116,7 +116,7 @@
     <section class="experience flex">
         <div class="w-2/3">
             <h2 class="about-color text-center text-4xl pb-7">My Experiences</h2>
-            <div class="flex">
+            <div class="flex experience-column">
                 <div>
                     <div class="column pb-7 pt-2 pl-2 mr-5 mb-6">
                         <h3 class="date-color">August 2020 - Date</h3>
@@ -133,7 +133,7 @@
                 </div>
 
 
-                <div>
+                <div class="line-img">
                     <img class="line mr-5" src="images/line.png" alt="line-img">
                 </div>
 
@@ -171,17 +171,17 @@
         <h3 class="text-center ski text-xl pb-4">Latest Projects</h3>
         <h2 class="about-color text-4xl text-center pb-16">What I've been doing so far</h2>
         <div class="project-container flex justify-around items-center">
-            <div>
+            <div class="project-div">
                 <img class="project-img" src="images/ca.jpg" alt="project-img">
                 <h3 class="project-title text-xl py-3">Time Series Analysis</h3>
                 <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
             </div>
-            <div>
+            <div class="project-div">
                 <img class="project-img" src="images/ca2.jpg" alt="project-img">
-                <h3 class="project-title text-xl py-3">ANN</h3>
+                <h3 class="project-title text-xl py-3">Artificial Neural Network</h3>
                 <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
             </div>
-            <div>
+            <div class="project-div">
                 <img class="project-img" src="images/ca3.jpg" alt="project-img">
                 <h3 class="project-title text-xl py-3">Convolutional Neural Network</h3>
                 <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
@@ -193,17 +193,17 @@
 
 
 
-    <section class="text-center pb-20 pt-32">
+    <section class="text-center pb-20 pt-32 testimonial">
         <div>
             <h3 class="ski text-xl pb-4">Client's word</h3>
-            <h2 class="about-color text-4xl pb-10">What clients say about me</h2>
+            <h2 class="about-color text-4xl pb-10 test-text">What clients say about me</h2>
             <img class="mx-auto apostrophee-img pb-5" src="images/apostrophee.png" alt="apostrophe"> 
             
             <div class="slideshow-container">
 
                <div class="mySlides fade">
                  <div id="first-testimonial">
-                        <p class="w-1/2 mx-auto pb-5">It's always a pleasure working with Victor, he is good at communicating and delivering results. He brings 100% to each project and gets work done when it's needed the most. He is always committed to constant improvement and it shows. I would recommend Victor to any Person looking to work with a quality Data Scientist.</p>
+                        <p class="w-1/2 mx-auto pb-5 test-p">It's always a pleasure working with Victor, he is good at communicating and delivering results. He brings 100% to each project and gets work done when it's needed the most. He is always committed to constant improvement and it shows. I would recommend Victor to any Person looking to work with a quality Data Scientist.</p>
                         <h3 class="ski text-lg pb-2">Emily Flatt</h3>
                         <h3>Software Engineer</h3>
                  </div>
@@ -211,7 +211,7 @@
 
                <div class="mySlides fade">
                  <div id="first-testimonial">
-                        <p class="w-1/2 mx-auto pb-5">I'm amazed at his knowledge and expertise. Everytime i talk to this guy, i learn something new. He is a smart person who has the right to drive to get the work done and prompt in delivery. He was helpful and went above and beyond to help me with my needs even though it was outside of job description. We indeed had a great time working together. If you're looking to build your machine learning model, Victor is your man!.</p>
+                        <p class="w-1/2 mx-auto pb-5 test-p">I'm amazed at his knowledge and expertise. Everytime i talk to this guy, i learn something new. He is a smart person who has the right to drive to get the work done and prompt in delivery. He was helpful and went above and beyond to help me with my needs even though it was outside of job description. We indeed had a great time working together. If you're looking to build your machine learning model, Victor is your man!.</p>
                         <h3 class="ski text-lg pb-2">Andrew Blackwell</h3>
                         <h3>Data Scientist</h3>
                     </div>
@@ -236,14 +236,14 @@
             <h3 class="text-xl cont">Contact</h3>
             <h2 class="text-4xl about-color mt-3 mb-16">Wanna hear from you</h2>
         </div>
-        <div class="flex">
-            <div class="w-1/2 ml-32">
+        <div class="flex contact-info">
+            <div class="w-1/2 contact-icon-details ml-32">
                 <div class="flex mb-9">
                     <div class="mr-12 w-6">
                         <i class="contact-icon border-2 fa-solid fa-location-dot"></i>
                     </div>
                     <div>
-                        <h2 class="about-color ">Address</h2>
+                        <h2 class="about-color">Address</h2>
                         <p>Awka Anambra</p>
                     </div>
                 </div>
@@ -272,9 +272,9 @@
 
             <div class="w-1/2 mr-16">
                 <form action="post">
-                    <div class="flex">
+                    <div class="flex input-name">
                         <input class="py-5 pl-3 mb-5" type="text" placeholder="First-Name"> 
-                        <input class="py-5 pl-3 mb-5 ml-5" type="" placeholder="Last-Name">
+                        <input class="py-5 pl-3 mb-5 ml-5" type="text" placeholder="Last-Name">
                     </div>
                     <input class="py-5 pl-3 mb-5" type="email" placeholder="Email"><br>
                     <textarea class="input-message mb-5 pl-3 pt-2" name="" id="" cols="62" rows="7" placeholder="Your Message"></textarea>

@@ -278,14 +278,174 @@ footer {
 
 
 /*****************************************RESPONSIVE DESIGN*********************************************/
+/*******Extra Small PHONES*******(max-width:600px)***/
+/*******Portrait Tablets*********(min-width:600px)***/
+/*******Medium Devices***********(min-width:768px)***/
+/*******Large Devices/laptops****(min-width:992px)***/
+/*******Extra Large Devices******(min-width:1200px)**/
 @media only screen and (max-width: 600px) {
-    .landing {
+    header {
+        margin: 0;
+    }
+    nav {
+        padding-left: 20px;
+    }
+    .nav-items {
+        display: none;
+    }
+    .nav-brand {
+        font-size: 30px;
+    }
+    .landing{
        display: block;
+       padding-left: 20px;
     }
-  }
+    .profile-img {
+        margin: 0 0 0 auto;
+        width: 250px;
+        min-width: 300px;
+        height: 450px;
+    }
+    .greeting {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .profession {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 45px;
+    }
+    .intro {
+        margin-bottom: 45px;
+    }
+    .Skills {
+        display: block;
+        text-align: center;
+        
+    }
+    .experience {
+        display: block;
+        align-items: center;
+        padding: 10% 15%;
+    }
+    .experience-column {
+        display: block;
+    }
+    .line-img {
+        display: none;
+    }
+    .column {
+        height: 185px;
+        min-height: 220px;
+        width: 350px;
+        min-width: 300px; 
+        margin-top: 40px;
+        padding: 20px 20px;
+    }
+    .column:first-child {
+        margin-top: 10px;
+    }
+    .about-color {
+        text-align: center;
+    }
+    .Ex-image {
+        width: 250px;
+        min-width: 300px;
+        height: 350px;
+    }
+    .Projects {
+        padding: 10% 20%;
+        align-items: center;
+    }
+    .project-container {
+        display: block;
+    }
+    .project-div {
+        margin-top: 40px
+    }
+    .project-div:first-child {
+        margin-top: 0;
+    }
+    .test-text {
+        width: 50%;
+        margin: auto;
+    }
+    .apostrophee-img {
+        height:40px;
+    }
+    .test-p {
+        width: 70%;
+    }
+    .dot {
+        height: 7px;
+        width: 7px;
+    }
+    .contact-info {
+        display: block;
+        margin: 0;
+    }
+    .contact-icon-details {
+        margin: 0;
+    }
+    input {
+        width: 100%;
+    }
+    .input-name {
+        display: block;
+    }
+}
 
-  /*@media only screen and (max-width: 768px) {
-    .profile {
-       display: none;
+/*@media only screen and (min-width: 600px  max-width:768px) {
+    header {
+        margin: 0;
     }
-  }  */
+    nav {
+        padding-left: 20px;
+    }
+    .nav-items {
+        display: none;
+    }
+    .nav-brand {
+        font-size: 30px;
+    }
+    .landing{
+       display: block;
+       padding-left: 20px;
+    }
+    .profile-img {
+        margin: 0 0 0 auto;
+        width: 250px;
+        min-width: 300px;
+        height: 450px;
+    }
+    .greeting {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .profession {
+        font-size: 15px;
+    }
+    .name {
+        font-size: 45px;
+    }
+    .intro {
+        margin-bottom: 45px;
+    }
+    .Skills {
+        display: block;
+        text-align: center;
+        
+    }
+    .experience {
+        display: block;
+        align-items: center;
+        padding: 10% 15%;
+    }
+    .experience-column {
+        display: block;
+    }
+    .line-img {
+        display: none;
+    }
+  }  */ 

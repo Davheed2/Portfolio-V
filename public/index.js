@@ -17,3 +17,16 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 5000); // Change image every 5 seconds
 }
+
+function openNav() {
+  document.getElementById("mySidebar").style.width = "50%";
+  document.getElementById("main").style.marginLeft = "50%";
+}
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+
+document.getElementById("mySidebar").addEventListener("click", openNav);
+document.getElementById("mySidebar").addEventListener("click", closeNav);
+document.getElementById("bodyy").addEventListener("click", closeNav);

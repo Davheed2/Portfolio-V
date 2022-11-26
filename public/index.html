@@ -21,21 +21,26 @@
    <header>
     <nav class="flex items-center justify-between py-10 mb-0">
         <h2 class="nav-brand text-5xl">Vheektor.</h2>
-
-        <ul class="flex nav-items pr-14">
-            <li class="text-xl nav-edit nav-link">
-                <a href="#Home"><span>Home</span></a>
-            </li>
-            <li class="text-xl nav-edit nav-link">
-                <a href="#About"><span>About</span></a>
-            </li>
-            <li class="text-xl nav-edit nav-link">
-                <a href=""><span>Latest Projects</span></a>
-            </li>
-            <li  class="text-xl nav-link last-navlink">
-                <a href="#Contact"><span>Contact</span></a>
-            </li>
-        </ul>
+        <div id="mySidebar" class="sidebar">
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img class="w-6" src="images/hamx-menu.png" alt="close-menu"></a>
+           <ul class="flex nav-items pr-14">
+              <li class="text-xl nav-edit nav-link">
+                  <a href="#Home"><span>Home</span></a>
+              </li>
+              <li class="text-xl nav-edit nav-link">
+                 <a href="#About"><span>About</span></a>
+              </li>
+              <li class="text-xl nav-edit nav-link">
+                 <a href="#project"><span>Latest Projects</span></a>
+              </li>
+              <li  class="text-xl nav-link last-navlink">
+                 <a href="#Contact"><span>Contact</span></a>
+              </li>
+           </ul>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()"><img class="w-9 h-7" src="images/ham-menu.png" alt="open-menu"></button>
+        </div>
     </nav>
    </header>
 
@@ -43,8 +48,8 @@
 
 
 
-   <main>
-    <section id="Home" class="landing flex justify-between items-center pb-20 px-10 ">
+   <main id="bodyy">
+    <section id="Home" class="landing flex justify-between items-center pb-20 px-10">
         <div class="flex-1 text-left mb-36 intro">
             <h3 class="text-2xl mb-5 greeting">Hello! I'm</h3> 
             <h1 class="text-7xl mb-5 name">Okonkwo <br> Ifeosoluchukwu <br> Victor</h1>
@@ -57,64 +62,50 @@
 
 
 
-
-
-
-
-
-
-
-
     <section id="About" class="Skills flex items-center">
-        <div class="w-1/2">
+        <div class="w-1/2 half half-img">
             <img class="skill-img" src="images/cv imagee.png" alt="skill-img">
-           <!--  <div>
+           <!--<div>
                 <img class="w-4" src="images/wavy lines.png" alt="wavy-line">
             </div>-->
         </div>
-        <div class="w-1/2">
+        <div class="w-1/2 half half-text">
             <h3 class="text-xl ski">Who Am I</h3>
             <h2 class="text-6xl about-color mt-5 mb-9">About Me</h2>
             <p class="about">I am a motivated, collaborative and detailed oriented Data Scientist with 2 years of experience in understanding business operations and analyzing data with analytical tools for more effectiveness, model building and problem solving. Dedicated and willing to learn and improve efficiency by my contributions statistically and through modelling.</p>
             <h2 class="text-4xl about-color mb-9 mt-9">Skills</h2>
-            <div class="flex">
+            <div class="flex half-about">
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-brain fa-2x mb-4"></i></span>
-                    <h3 class="w-9">Deep Learning</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-brain fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">Deep Learning</h3>
                 </div>
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-laptop fa-2x mb-4"></i></span>
-                    <h3 class="w-9">Machine Learning</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-laptop fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">Machine Learning</h3>
                 </div>
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-clock fa-2x mb-4"></i></span>
-                    <h3 class="w-9">Time Series Analysis</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-clock fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">Time Series Analysis</h3>
                 </div>
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-magnifying-glass-chart fa-2x mb-4"></i></span>
-                    <h3 class="w-9">Data Analysis</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-magnifying-glass-chart fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">Data Analysis</h3>
                 </div>
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-database fa-2x mb-4"></i></span>
-                    <h3 class="w-9">SQL</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-database fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">SQL</h3>
                 </div>
                 <div class="div-icon">
-                    <span><i class="items-center icons fa-solid fa-chart-simple fa-2x mb-4"></i></span>
-                    <h3 class="w-9">Visualization</h3>
+                    <span class="span-icon"><i class="items-center icons fa-solid fa-chart-simple fa-2x mb-4"></i></span>
+                    <h3 class="w-1/6">Visualization</h3>
                 </div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
     <section class="experience flex">
-        <div class="w-2/3">
+        <div class="w-2/3 ex-half">
             <h2 class="about-color text-center text-4xl pb-7">My Experiences</h2>
             <div class="flex experience-column">
                 <div>
@@ -122,13 +113,13 @@
                         <h3 class="date-color">August 2020 - Date</h3>
                         <h3 class="pt-4 pb-2 text-xl exp">Data Science</h3>
                         <p class="mb-3">Statistical Analyst - Proficient in Machine learning statistics based analysis, solved problem involving what should be done in a movie for a high gross profit E.g Gross Profit of Deep analysis</p>
-                        <button class="btn-e">View on github</button>
+                        <button class="btn-e"><a href="https://github.com/Vheektoh/Gross-Profit-Of-Movies-Deep-Analysis">View on github</a></button>
                     </div>
                     <div class="column pb-7 pt-2 pl-2 mr-5 mb-6 mt-20">
                         <h3 class="date-color">August 2020 - Date</h3>
                         <h3 class="pt-4 pb-2 text-xl exp">Machine Learning</h3>
                         <p class="mb-3">Model Training - Training models using different ML algorithm, early detection and management of heart disease was achieved using supervised learning E.g Heart failure prediction</p>
-                        <button class="btn-e">View on github</button>
+                        <button class="btn-e"><a href="https://github.com/Vheektoh/Heart-Failure-Prediction-using-Machine-Learning">View on github</a></button>
                     </div>
                 </div>
 
@@ -143,13 +134,13 @@
                         <h3 class="date-color">August 2020 - Date</h3>
                         <h3 class="pt-4 pb-2 text-xl exp">Basic NLP Sentiment Analysis</h3>
                         <p class="mb-3">Test Analysis - Using NLP and bag of words to Analyze sentiment of Elon Musk's tweet, inference was drawn on checking if Elon Musk's sentiments affected the Tesla stock price</p>
-                        <button class="btn-e">View on github</button>
+                        <button class="btn-e"><a href="https://github.com/Vheektoh/Sentiment-Analysis-Effect-of-Elon-Musk-s-tweet-on-Tesla-stock">View on github</a></button>
                     </div>
                     <div class="column pb-7 pt-2 pl-2 mr-5 mb-6 mt-16">
                         <h3 class="date-color">August 2020 - Date</h3>
                         <h3 class="pt-4 pb-2 text-xl exp">Neural Network And Feature Importance</h3>
                         <p class="mb-3">Feature Selection - Solved the problem of redundancy in data using statistical methods and trained model using neural network</p>
-                        <button class="btn-e mt-4">View on github</button>
+                        <button class="btn-e mt-4"><a href="https://github.com/Vheektoh/Feature-Selection-and-ANN-pred-modelling">View on github</a></button>
                     </div>
                 </div>
             </div>
@@ -158,45 +149,50 @@
 
         </div>
 
-        <div class="w-1/3">
+        <div class="w-1/3 ex-half">
             <img class="Ex-image my-auto" src="images/cv imagee rev.png" alt="Experience-image">
         </div>
-    </section>
+    </section>-->
 
 
 
-
-
-    <section class="Projects pt-32 px-24 pb-9">
+    <section id="project" class="Projects pt-32 px-24 pb-9">
         <h3 class="text-center ski text-xl pb-4">Latest Projects</h3>
         <h2 class="about-color text-4xl text-center pb-16">What I've been doing so far</h2>
         <div class="project-container flex justify-around items-center">
-            <div class="project-div">
-                <img class="project-img" src="images/ca.jpg" alt="project-img">
+            <div class="project-div h-96">
+                <img class="project-img imgg" src="images/time-img.jpg" alt="project-img">
                 <h3 class="project-title text-xl py-3">Time Series Analysis</h3>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
+                <p class="project-text">Time series analysis helps organizations understand the underlying causes of trends or systemic patterns over time.</p>
+                <div class="middle">
+                    <a href="https://github.com/Vheektoh/Time-Series-Analysis-and-Forecasting"><i class="fa-solid fa-link link"></i></a>
+                </div>
             </div>
             <div class="project-div">
-                <img class="project-img" src="images/ca2.jpg" alt="project-img">
+                <img class="project-img imgg" src="images/articial-img.jpg" alt="project-img">
                 <h3 class="project-title text-xl py-3">Artificial Neural Network</h3>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
+                <p class="project-text">Before the state of the art CNNs were developed, the image processings were done using multi-layer perceptron hence known as ANN the basic building block of the neural networks.</p>
+                <div class="middle">
+                    <a href="https://github.com/Vheektoh/Image-Classification-using-ANN-"><i class="fa-solid fa-link link"></i></a>
+                </div>
             </div>
             <div class="project-div">
-                <img class="project-img" src="images/ca3.jpg" alt="project-img">
+                <img class="project-img imgg" src="images/convolution-img.jpg" alt="project-img">
                 <h3 class="project-title text-xl py-3">Convolutional Neural Network</h3>
-                <p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, quaerat aperiam laborum doloribus praesentium ratione dolorum dolores architecto.</p>
+                <p class="project-text">The Convolutional Neural Network (CNN or ConvNet) is a subtype of the Neural Networks that is mainly used for applications in image and video recognition. Its built-in convolutional layer reduces the high dimensionality of images without losing its information.</p>
+                <div class="middle">
+                    <a href="https://github.com/Vheektoh/gradient-descent-and-blueprint-of-neural-network-using-pytorch"><i class="fa-solid fa-link link"></i></a>
+                </div>
             </div>
         </div>
     </section>
-
-
 
 
 
     <section class="text-center pb-20 pt-32 testimonial">
         <div>
             <h3 class="ski text-xl pb-4">Client's word</h3>
-            <h2 class="about-color text-4xl pb-10 test-text">What clients say about me</h2>
+            <h2 class="testimonial-color text-4xl pb-10 test-text">What clients say about me</h2>
             <img class="mx-auto apostrophee-img pb-5" src="images/apostrophee.png" alt="apostrophe"> 
             
             <div class="slideshow-container">
@@ -227,23 +223,19 @@
     </section>
 
 
-
-
-
-
     <section id="Contact" class="contact-route py-20">
         <div class="text-center">
             <h3 class="text-xl cont">Contact</h3>
-            <h2 class="text-4xl about-color mt-3 mb-16">Wanna hear from you</h2>
+            <h2 class="text-4xl contact-color mt-3 mb-16">Wanna hear from you</h2>
         </div>
         <div class="flex contact-info">
-            <div class="w-1/2 contact-icon-details ml-32">
+            <div class="w-1/2 contact-icon-details half-contact ml-48">
                 <div class="flex mb-9">
                     <div class="mr-12 w-6">
                         <i class="contact-icon border-2 fa-solid fa-location-dot"></i>
                     </div>
                     <div>
-                        <h2 class="about-color">Address</h2>
+                        <h2 class="contact-color">Address</h2>
                         <p>Awka Anambra</p>
                     </div>
                 </div>
@@ -252,7 +244,7 @@
                         <i class="contact-icon fa-solid fa-phone"></i>
                     </div>
                     <div>
-                        <h2 class="about-color">Phone</h2>
+                        <h2 class="contact-color">Phone</h2>
                         <p>+2348168509163</p>
                     </div>
                 </div>
@@ -261,23 +253,21 @@
                         <i class="contact-icon fa-solid fa-envelope"></i>
                     </div>
                     <div>
-                        <h2 class="about-color">Email</h2>
+                        <h2 class="contact-color">Email</h2>
                         <p>invo4686@gmail.com</p>
                     </div>
                 </div>
             </div>
 
 
-
-
-            <div class="w-1/2 mr-16">
-                <form action="post">
+            <div class="w-2/3 mr-32 contact-input-details half-contact">
+                <form action="https://formsubmit.co/invo4686@gmail.com" method="POST">
                     <div class="flex input-name">
-                        <input class="py-5 pl-3 mb-5" type="text" placeholder="First-Name"> 
-                        <input class="py-5 pl-3 mb-5 ml-5" type="text" placeholder="Last-Name">
+                        <input class="py-5 pl-3 mb-5" type="text" name="First-Name" placeholder="First-Name" required> 
+                        <input class="py-5 pl-3 mb-5 ml-5 l-name" type="text" name="Second-Name" placeholder="Last-Name" required>
                     </div>
-                    <input class="py-5 pl-3 mb-5" type="email" placeholder="Email"><br>
-                    <textarea class="input-message mb-5 pl-3 pt-2" name="" id="" cols="62" rows="7" placeholder="Your Message"></textarea>
+                    <input class="py-5 pl-3 mb-5" type="email" name="Email" placeholder="Email"><br>
+                    <textarea class="input-message mb-5 pl-3 pt-2" name="Message" id="" cols="62" rows="7" placeholder="Your Message"></textarea>
                     <button class="btn " type="submit">Send</button>
                 </form>
             </div>

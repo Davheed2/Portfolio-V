@@ -1839,15 +1839,12 @@ footer {
   }
 }
 
-@media only screen and (min-width: 901px) and (max-width: 950px) {
-  .btn-e:nth-child(1) {
-    margin-top: 0;
-  }
-
-  .btn-e:nth-child(2) {
-    margin-top: 0;
-  }
-}
+/*@media only screen and (min-width: 901px) and (max-width: 950px) {
+    .btn-e:nth-child(4) {
+        margin-top: 0;
+    }
+   
+}*/
 
 @media only screen and (min-width: 768px) and (max-width: 950px){
 }
@@ -1924,12 +1921,6 @@ footer {
 
   .btn-e {
     margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .btn-e:nth-child(4) {
-    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
   }

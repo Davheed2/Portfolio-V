@@ -41,7 +41,6 @@ textarea {
     border-radius: 4px;
     resize: none;
     width: 100%;
-    max-width: 500px;
 }
 
 /*******************1ST AND 2ND SECTION***********************/
@@ -92,12 +91,10 @@ header {
     align-items: center;
 }
 
-
 /********************3RD SECTION*************************/
 .Skills {
     background-color: #DDE8F0;
     padding: 8% 13% 8%;
-    /*max-width: 1300px;*/
 }
 .ski {
     color: #018ABD;
@@ -108,12 +105,17 @@ header {
     height: 385px;
     margin: 0 auto;
 }
-
 .about-color {
     color: #01202c;
 }
+.half-about {
+    width: 50%;
+}
 .div-icon {
-   width: 20%;
+   width: 33.33%;
+}
+.span-icon {
+    display: block;
 }
 .icons {
     color: #018ABD;
@@ -126,7 +128,6 @@ header {
 .experience {
     background-color: #97CBDC;
     padding: 2% 7% 2% 4%;
-    /*max-width: 1300px;*/
 }
 .Ex-image {
     width: 400px;
@@ -145,7 +146,6 @@ header {
     color: #01202c;
     font-weight: bold;
 }
-
 .column {
     background-color: #DDE8F0;
     border: 1px solid #018ABD;
@@ -199,6 +199,9 @@ header {
 .project-div:nth-child(2) {
     height: 365px;
 }
+.project-div:nth-child(3) {
+    height: 365px;
+}
 .middle {
     position: absolute;
     text-align: center;
@@ -234,7 +237,6 @@ header {
     background-color: #fff;
     color: #018ABD;
 }
-
 
 /*********************6TH SECTION*******************************/
 .apostrophee-img {
@@ -294,12 +296,12 @@ footer {
     margin-bottom: 0;
 }
 .copyright {
+    font-size: 15px;
     line-height: 1.5;
 }
 .footer-text {
     font-weight: normal;
 }
-
 
 
 
@@ -309,6 +311,8 @@ footer {
 /*******Medium Devices***********(min-width:768px)***/
 /*******Large Devices/laptops****(min-width:992px)***/
 /*******Extra Large Devices******(min-width:1200px)**/
+
+/*******HAMBURGER MENU**********/
 @media only screen and (max-width : 768px) {
     .sidebar {
         height: 100%;
@@ -390,7 +394,7 @@ footer {
         padding-top: 35px;
     }
     .nav-brand {
-        font-size: 30px;
+        font-size: 27px;
     }
     .landing{
        display: block;
@@ -400,7 +404,7 @@ footer {
         margin: 0 0 0 auto;
         width: 250px;
         min-width: 300px;
-        height: 450px;
+        height: 410px;
     }
     .greeting {
         margin-top: 20px;
@@ -410,7 +414,7 @@ footer {
         font-size: 1.3rem;
     }
     .name {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .intro {
         margin-bottom: 45px;
@@ -425,6 +429,19 @@ footer {
     }
     .span-icon {
         display: table;
+    }
+    .half-skill {
+        display: block;
+    }
+    .half-about{
+        width: 100%;
+    }
+    .half-about-1 {
+        margin-bottom: 40px;
+        text-align: -webkit-center;
+    }
+    .half-about-2 {
+        text-align: -webkit-center;
     }
     .half {
         width: 100%;
@@ -451,20 +468,17 @@ footer {
     }
     .about-color {
         text-align: center;
+        font-size: 2.4rem;
     }
     .line-img {
         display: none;
     }
     .column {
-        height: 180px;
-        min-height: 220px;
+        height: 300px;
         width: 100%;
         margin-top: 40px;
         padding: 20px 20px;
         position: relative;
-    }
-    .column:first-child {
-        margin-top: 10px;
     }
     .btn-e {
          position: absolute;
@@ -498,15 +512,15 @@ footer {
     .project-img, 
     .project-text {
         width: 100%;
-    } 
+    }
     .project-div:first-child {
         margin-top: 0;
     }
     .link {
-        margin-bottom: 80px; 
+        margin-bottom: 130px; 
     }
     .test-text {
-        width: 50%;
+        width: 80%;
         margin: auto;
     }
     .apostrophee-img {
@@ -587,9 +601,7 @@ footer {
     .skill-img {
        height: 340px; 
     }
-    .icons {
-        margin-right: 60px;
-    }
+    
     .half {
         width: 100%;
     }
@@ -621,20 +633,14 @@ footer {
         display: none;
     }
     .column {
-        height: 180px;
-        min-height: 220px;
+        height: 250px;
         width: 100%;
         margin-top: 40px;
         padding: 20px 20px;
         position: relative;
     }
-    .column:first-child {
-        margin-top: 10px;
-    }
     .btn-e {
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 10px;
    }
     .Ex-image {
         width: 60%;
@@ -657,6 +663,9 @@ footer {
         height: auto;
     }
     .project-div:nth-child(2) {
+        height: auto;
+    }
+    .project-div:nth-child(3) {
         height: auto;
     }
     .project-img, 
@@ -758,26 +767,15 @@ footer {
         display: none;
     }
     .column {
-        height: 180px;
-        min-height: 220px;
+        height: 250px;
         width: 100%;
         margin-top: 40px;
         padding: 20px 20px;
         position: relative;
     }
-    .column:first-child {
-        margin-top: 10px;
-    }
     .btn-e {
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 10px;
    }
-   .btn-e:last-child {
-        margin-top: 50px;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .Projects {
         padding: 5% 17%;
         align-items: center;
@@ -813,16 +811,6 @@ footer {
     .Ex-image {
         display: inline;
     }
-}
-
-/*@media only screen and (min-width: 901px) and (max-width: 950px) {
-    .btn-e:nth-child(4) {
-        margin-top: 0;
-    }
-   
-}*/
-@media only screen and (min-width: 768px) and (max-width: 950px){
-     
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1100px){
@@ -870,22 +858,15 @@ footer {
         display: none;
     }
     .column {
-        height: 180px;
-        min-height: 220px;
+        height: 250px;
         width: 100%;
         margin-top: 40px;
         padding: 20px 20px;
         position: relative;
     }
-    .column:first-child {
-        margin-top: 10px;
-    }
     .btn-e {
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 10px;
    }
- 
     .Projects {
         padding-left: 5%;
         padding-right: 5%;
@@ -916,20 +897,14 @@ footer {
         display: none;
     }
     .column {
-        height: 180px;
-        min-height: 220px;
+        height: 220px;
         width: 100%;
         margin-top: 40px;
         padding: 20px 20px;
         position: relative;
     }
-    .column:first-child {
-        margin-top: 10px;
-    }
     .btn-e {
-        margin-top: 40px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-top: 10px;
    }
    .btn-e:last-child {
         margin-top: 50px;

@@ -19,8 +19,8 @@ function showSlides() {
 }
 
 function openNav() {
-  document.getElementById("mySidebar").style.width = "50%";
-  document.getElementById("main").style.marginLeft = "50%";
+  document.getElementById("mySidebar").style.width = "60%";
+  document.getElementById("main").style.marginLeft = "60%";
 }
 function closeNav() {
   document.getElementById("mySidebar").style.width = "0";

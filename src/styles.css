@@ -199,9 +199,6 @@ header {
 .project-div:nth-child(2) {
     height: 365px;
 }
-.project-div:nth-child(3) {
-    height: 365px;
-}
 .middle {
     position: absolute;
     text-align: center;
@@ -503,12 +500,12 @@ footer {
     .project-div {
         margin-top: 40px;
     }
-    .project-div:nth-child(1) {
+    /*.project-div:nth-child(1) {
         height: auto;
     }
     .project-div:nth-child(2) {
         height: auto;
-    }
+    }*/
     .project-img, 
     .project-text {
         width: 100%;
@@ -517,7 +514,7 @@ footer {
         margin-top: 0;
     }
     .link {
-        margin-bottom: 130px; 
+        margin-bottom: 150px; 
     }
     .test-text {
         width: 80%;
@@ -663,9 +660,6 @@ footer {
         height: auto;
     }
     .project-div:nth-child(2) {
-        height: auto;
-    }
-    .project-div:nth-child(3) {
         height: auto;
     }
     .project-img, 

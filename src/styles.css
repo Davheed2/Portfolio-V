@@ -573,9 +573,9 @@ footer {
     }
     .profile-img {
         margin: 0 0 0 auto;
-        width: 250px;
-        min-width: 300px;
-        height: 450px;
+        width: 350px;
+        min-width: 350px;
+        height: 500px;
     }
     .greeting {
         margin-top: 20px;
@@ -585,7 +585,7 @@ footer {
         font-size: 1.3rem;
     }
     .name {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .intro {
         margin-bottom: 45px;
@@ -643,7 +643,7 @@ footer {
         width: 60%;
         min-width: 340px;
         margin-left: 13px;
-        height: 330px;
+        height: 390px;
         display: inline;
     }
     .Projects {
